@@ -1,0 +1,46 @@
+title: ModyoDX™ in Action: Define the Purpose and Taxonomy of Your Site
+headline: Learn about Categories & Tags 
+author: Wesley Campbell
+date: 04-08-2016
+
+{% extends "post.html" %}
+{% block body %}
+
+{% filter markdown %}
+
+*Objective: Use the built-in Category and Tag tools on the ModyoDX™ platform to organize content taxonomy and help keep a website’s purpose well-defined.*
+
+###Define the Site Purpose
+
+For this tutorial series, [we built a site using ModyoDX™](https://demos.modyo.io/enterprise-cms "for front end developers") for front end developers to learn and keep up to date with technologies in their industry such as css, javascript, etc. Information in this sector is constantly evolving, and creating a site that helps direct developers to quality information brings value to their work. This is the purpose of the site.
+
+We are achieving this with [ModyoDX™’s Content application](http://www.modyo.com/digital-experience-management-platform/web-content-management-application "ModyoDX™ Content"), as well as other tools, to share posts and videos about these front end technologies. These posts and videos are interactive areas where people can comment with one another and contribute to a like-minded community of developers. 
+
+###Web Taxonomy
+
+With the purpose defined, we want to think about the taxonomy of our website. When we say taxonomy, we are referencing the labeling and organization of your site pages and content based on similar characteristics. There are numerous resources on the web that explain the benefits of a good site taxonomy. We recommend starting here. 
+
+We’ve decided that our main content will be posts and videos, and now we want to define the structure. We are going to use two different organizational tools within ModyoDX™ to achieve this: Categories and Tags. Our two main categories are, ‘CSS' and ‘Javascript' related content, and each of those will have subcategories.  
+
+###Categories & Tags
+
+Categories form an integral part of your URL structure. Although your site creation is in no way dependent on their use, we recommend leveraging Categories due to their strong organizational value when specifying content in different areas of your site. This becomes truer as the amount of your total content increases, reducing overall complexity. 
+
+Categories are most often seen in the path portion of any URL. On ModyoDX™-powered sites, they begin after the domain and/or port portion of a web address, e.g. in the URL http://modyo.com/news/, the Category portion is /news/.
+
+Any resource may only have one Category. However, there are ‘parent’ Categories that can have multiple ‘child’ categories. In our website for front end developer news and insights, we have a Category called ‘CSS’. Within that Category are two others, called ‘Bootstrap’ and ‘Foundation’. In a later tutorial, you will see how easy it is to customize content output within Widgets when Categories are well defined. 
+
+Building your Categories at the outset is not crucial, but having their design in mind while you get your site underway will greatly benefit your site organization in the long-run. 
+
+The other primary tool for your site taxonomy is Tags. Their behavior on the platform differs from Categories in many ways. The clearest difference between a Tag and a Category is that while any resource may only be associated with one Category, it may have multiple Tags. Associating a single resource with multiple Tags may be desirable when it is relevant to multiple topics, either across Categories or many topics within a single Category.
+
+Tags are also not a URL dimension. Unlike Categories, they do not appear along the path to a file or location in your website. They instead act as filters tied to any given resource, and you apply them at the moment of resource creation. There is a Category manager, but no Tag manager. Instead, Tags come with an auto-suggestion feature so that you can avoid overlaps and maintain proper content grouping. 
+
+Widgets with multiple Tags display content using a logical ‘AND’ connector, so that every tag applied to a Widget acts as a filter for the content it displays. This behavior is designed to give Widgets the potential to be specific.
+
+The best way to understand these tools and put them in context is to see them in action. In the next tutorial, we will create a piece of content with the Content application, apply our new understanding of Categories and Tags, and see how our Widgets and Layouts interact with this new piece of content on the front end.
+
+Continue to ModyoDX™ in Action: Create Your Content 
+
+{% endfilter %}
+{% endblock body %}
